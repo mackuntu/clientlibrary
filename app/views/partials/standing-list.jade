@@ -1,12 +1,17 @@
- 您现在的Bids
 .row.marketing
     .col-lg-6
+        h2 您已递交的Bids
         span(ng-repeat="job in jobs")
             h4 {{job.job}}
-            h3.text-success {{job.commision}}
-            p {{job.company}}
+            h3.text-success 酬薪：{{job.commision}}
+            p 公司：{{job.company}}
+            button.btn.btn-success Manage
+            hr
     .col-lg-6
-        span(ng-repeat="job in jobs | orderBy: 'commision'")
+        h2 可以观察的Bids
+        .placeholder(ng-repeat="job in jobs | orderBy: 'commision'")
             h4 {{job.job}}
-            h3.text-success {{job.commision}}
-            p {{job.company}}
+            h3.text-success 酬薪：{{job.commision}}
+            p 公司：{{job.company}}
+            button.btn.btn-success Bid
+            hr
