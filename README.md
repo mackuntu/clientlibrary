@@ -1,4 +1,4 @@
-ladder
+UI Demo for client
 ======
 
-Simple web based ladder engine for ladder tournaments
+This is setup to demonstrate feasibility of mock UI development using MEAN stack. 
