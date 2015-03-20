@@ -1,0 +1,43 @@
+doctype html
+html(lang='en', ng-app='ladderApp')
+head
+    meta(charset='utf-8')
+    title UI Demo
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css')
+    link(rel='stylesheet', href='css/animations.css')
+    link(rel='stylesheet', href='css/cover.css')
+    script(src='bower_components/jquery/dist/jquery.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js')
+    script(src='bower_components/angular/angular.js')
+    script(src='bower_components/angular-animate/angular-animate.js')
+    script(src='bower_components/angular-route/angular-route.js')
+    script(src='bower_components/angular-resource/angular-resource.js')
+    script(src='bower_components/angular-sanitize/angular-sanitize.js')
+    script(src='js/app.js')
+    script(src='js/controllers.js')
+    script(src='js/factory.js')
+body
+    .container 
+        .header.clearfix
+            nav 
+                ul.nav.nav-pills.pull-right
+                    li.active(role="presentation")
+                        a(href="#") Home
+                    li(role="presentation")
+                        a(href="#") About
+                    li(role="presentation")
+                        a(href="#") Contact
+            h3.text-muted Client UI Demo
+        .jumbotron
+            h1 Your Ad here
+            p.lead 
+                | 代人不賣據河現童股發、們人父式，笑果那包
+                | 會發省萬愛足由跑術稱今更根定道交友防力顯地造成流媽區備不為了市他萬書青了做從中什子器海器光時條的終性岸、
+                | 美朋濟隨去工未新臺、懷能檢來愛導雖葉經知。最是自是高們港線，夫童但隊靜後上，起研身請她人我里銷二少那見公我護示。
+                | 中到證他晚可溫價信選過高般看受全足查理重……下速樂期否大至果以安裡美造議、寫論重快，多古照；間送例知母不條？
+
+        .view-container
+          .view-frame(ng-view='')
+        footer.footer
+            p Client Demo 2015
+

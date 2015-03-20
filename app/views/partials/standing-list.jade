@@ -1,0 +1,12 @@
+ 您现在的Bids
+.row.marketing
+    .col-lg-6
+        span(ng-repeat="job in jobs")
+            h4 {{job.job}}
+            h3.text-success {{job.commision}}
+            p {{job.company}}
+    .col-lg-6
+        span(ng-repeat="job in jobs | orderBy: 'commision'")
+            h4 {{job.job}}
+            h3.text-success {{job.commision}}
+            p {{job.company}}
